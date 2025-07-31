@@ -25,13 +25,16 @@ return function()
 			['<C-f>'] = { 'scroll_documentation_up' },
 
 			['<C-Space>'] = { 'show' },
+
 			['<C-e>'] = { 'hide' },
-			['<Esc>'] = { 'hide' },
+			['<Esc>'] = { 'hide', 'fallback' },
 
-			['<CR>'] = { 'accept' },
+			['<CR>'] = { 'accept', 'fallback' },
 
-			['<C-Enter>'] = { 'select_and_accept' },
+			['<C-Enter>'] = { 'select_and_accept', 'fallback' },
 
+			['<Tab>'] = { 'select_next', 'snippet_forward', 'fallback' },
+			['<S-Tab>'] = { 'select_prev', 'snippet_backward', 'fallback' },
 		}
 
 	})
