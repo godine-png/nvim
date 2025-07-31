@@ -11,4 +11,4 @@ My neovim config
 - Ensure to have so far:
     - clanged
     - lua-language-server
-    in your path
+in your path
