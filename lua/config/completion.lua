@@ -18,6 +18,21 @@ return function()
 		},
 
 		-- keybindings
+		keymap = {
+
+			preset = "default",
+			['<C-b>'] = { 'scroll_documentation_down' },
+			['<C-f>'] = { 'scroll_documentation_up' },
+
+			['<C-Space>'] = { 'show' },
+			['<C-e>'] = { 'hide' },
+			['<Esc>'] = { 'hide' },
+
+			['<CR>'] = { 'accept' },
+
+			['<C-Enter>'] = { 'select_and_accept' },
+
+		}
 
 	})
 
