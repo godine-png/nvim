@@ -1,7 +1,19 @@
 return function()
-	require("lspconfig").lua_ls.setup {}
-	require("lspconfig").clangd.setup {}
-	require("lspconfig").pyright.setup {}
+	-- define LSP capabilities
+	local capabilities = vim.lsp.protocol.make_client_capabilities()
+	-- for snippets maybe
+	capabilities.textDocument.completion.completionItem.snippetSupport = true
+
+	-- lspconfig and cmp setup
+	require("lspconfig").lua_ls.setup {
+		capabilities = capabilities,
+	}
+	require("lspconfig").clangd.setup {
+		capabilities = capabilities,
+	}
+	require("lspconfig").pyright.setup {
+		capabilities = capabilities,
+	}
 
 	vim.api.nvim_create_autocmd('LspAttach', {
 		callback = function(args)
@@ -14,11 +26,11 @@ return function()
 				vim.api.nvim_create_autocmd('BufWritePre', {
 					buffer = args.buf,
 					callback = function()
-							vim.lsp.buf.format({ bufnr = args.buf, id = client.id})
-						end,
-					})
-				end
-			end,
+						vim.lsp.buf.format({ bufnr = args.buf, id = client.id })
+					end,
+				})
+			end
+		end,
 	})
 
 	vim.api.nvim_create_autocmd("FileType", {

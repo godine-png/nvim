@@ -10,9 +10,10 @@ vim.g.mapleader = " "
 
 vim.keymap.set("n", "<leader>h", ":noh<CR>")
 vim.keymap.set("n", "<leader>x", ":so %<CR>")
-vim.keymap.set("n", "<leader>n", ":bn <CR>")
-vim.keymap.set("n", "<leader>b", ":bp <CR>")
+vim.keymap.set("n", "<leader>bn", ":bn <CR>")
+vim.keymap.set("n", "<leader>bb", ":bp <CR>")
 
 vim.cmd("colorscheme retrobox")
 
 require("config.lsp")()
+require("config.completion")()
