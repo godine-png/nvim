@@ -1,0 +1,47 @@
+# Neovim Cache and Data
+.nvim/
+nvim-data/
+/pack/*/start/*/lua/lazy/
+/pack/*/start/*/ftplugin/
+/pack/*/start/*/after/
+/pack/*/start/*/doc/
+/pack/*/start/*/syntax/
+/pack/*/start/*/plugin/
+/pack/*/start/*/compiler/
+/pack/*/start/*/indent/
+/pack/*/start/*/spell/
+/pack/*/start/*/rplugin.vim
+/pack/*/start/*/plugin/**/*.vim
+
+# LSP and Compiler related
+.luacache/
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+__pycache__/
+compile_commands.json
+*.o
+*.out
+*.exe
+*.obj
+*.lib
+*.dll
+*.so
+*.dylib
+
+# Swap and Backup Files
+*.swp
+*.swo
+*.bak
+*~
+
+# Session Files
+Session.vim
+.nvim.lsp.log
+
+# Installed plugins using Neovim's pack
+/pack/*/start/*
+
+# OS Specific junk
+.DS_Store
+Thumbs.db
