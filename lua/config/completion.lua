@@ -27,7 +27,6 @@ return function()
 			['<C-Space>'] = { 'show' },
 
 			['<C-e>'] = { 'hide' },
-			['<Esc>'] = { 'hide', 'fallback' },
 
 			['<CR>'] = { 'accept', 'fallback' },
 
