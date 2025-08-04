@@ -14,6 +14,13 @@ return function()
 	require("lspconfig").pyright.setup {
 		capabilities = capabilities,
 	}
+	require("lspconfig").tinymist.setup {
+		capabilities = capabilities,
+		settings = {
+			formatterMode = "typestyle",
+			semanticTokens = "disable",
+		},
+	}
 
 	vim.api.nvim_create_autocmd('LspAttach', {
 		callback = function(args)

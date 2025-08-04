@@ -9,11 +9,33 @@ return function()
 
 		},
 		-- appearance
-		appearance = {
+		completion = {
 
-			border = "single",
-			scrollbar = true,
-			nerd_font_variant = "mono",
+			menu = {
+
+				border = "single",
+
+			},
+
+			documentation = {
+
+				window = {
+
+					border = 'single'
+
+				},
+
+			},
+
+		},
+
+		signature = {
+
+			window = {
+
+				border = 'single'
+
+			},
 
 		},
 
