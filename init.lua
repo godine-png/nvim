@@ -23,6 +23,8 @@ vim.keymap.set("n", "<C-S-Tab>", "gT", { desc = "Previous tab" })               
 
 vim.cmd("colorscheme retrobox")
 
+require("mason").setup()
+require("mason-lspconfig").setup()
+
 require("config.lsp")()
 require("config.completion")()
-require("mason").setup()
