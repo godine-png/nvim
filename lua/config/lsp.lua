@@ -11,7 +11,7 @@ return function()
 	require("lspconfig").clangd.setup {
 		capabilities = capabilities,
 	}
-	require("lspconfig").pyright.setup {
+	require("lspconfig").ruff.setup {
 		capabilities = capabilities,
 	}
 	require("lspconfig").tinymist.setup {

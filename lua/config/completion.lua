@@ -1,47 +1,28 @@
 return function()
 	local cmp = require("blink.cmp")
-
 	cmp.setup({
 		-- basic config
 		sources = {
-
 			default = { 'lsp', 'buffer' },
-
 		},
 		-- appearance
 		completion = {
-
 			menu = {
-
 				border = "single",
-
 			},
-
 			documentation = {
-
 				window = {
-
 					border = 'single'
-
 				},
-
 			},
-
 		},
-
 		signature = {
-
 			window = {
-
 				border = 'single'
-
 			},
-
 		},
-
 		-- keybindings
 		keymap = {
-
 			preset = "default",
 			['<C-b>'] = { 'scroll_documentation_down' },
 			['<C-f>'] = { 'scroll_documentation_up' },
@@ -57,7 +38,6 @@ return function()
 			['<Tab>'] = { 'select_next', 'snippet_forward', 'fallback' },
 			['<S-Tab>'] = { 'select_prev', 'snippet_backward', 'fallback' },
 		}
-
 	})
 
 	-- LSP completion capabilities
