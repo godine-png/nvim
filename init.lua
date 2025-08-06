@@ -26,5 +26,7 @@ vim.cmd("colorscheme retrobox")
 require("mason").setup()
 require("mason-lspconfig").setup()
 
+require("gitsigns").setup()
+
 require("config.lsp")()
 require("config.completion")()
