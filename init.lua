@@ -10,6 +10,7 @@ vim.o.syntax = "ON"
 vim.o.swapfile = false
 vim.g.mapleader = " "
 vim.o.smartindent = true
+vim.o.mouse = ""
 
 vim.keymap.set("n", "<leader>h", ":noh<CR>", { desc = "Clear search highlight" }) -- clear search highlight
 vim.keymap.set("n", "<leader>x", ":so %<CR>", { desc = "Shout out/ source" })     -- shout out/source
