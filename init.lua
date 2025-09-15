@@ -6,6 +6,7 @@ vim.o.tabstop = 2
 vim.o.shiftwidth = 2
 vim.o.clipboard = "unnamedplus"
 vim.o.title = true
+vim.o.scrolloff = 8
 vim.o.syntax = "ON"
 vim.o.swapfile = false
 vim.g.mapleader = " "
