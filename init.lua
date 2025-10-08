@@ -16,6 +16,7 @@ vim.o.colorcolumn = "80"
 
 vim.keymap.set("n", "<leader>h", ":noh<CR>", { desc = "Clear search highlight" }) -- clear search highlight
 vim.keymap.set("n", "<leader>x", ":so %<CR>", { desc = "Shout out/ source" })     -- shout out/source
+vim.keymap.set("n", "<leader>bl", ":buffers <CR>", { desc = "List buffers" })     -- list buffers
 vim.keymap.set("n", "<leader>bn", ":bn <CR>", { desc = "Next buffer" })           -- next buffer
 vim.keymap.set("n", "<leader>bb", ":bp <CR>", { desc = "Previous buffer" })       -- previous buffer
 vim.keymap.set("n", "<leader>bd", ":bd! <cr>", { desc = "Delete buffer" })        -- delete buffer
