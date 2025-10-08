@@ -6,7 +6,7 @@ vim.o.tabstop = 2
 vim.o.shiftwidth = 2
 vim.o.clipboard = "unnamedplus"
 vim.o.title = true
-vim.o.scrolloff = 8
+vim.o.scrolloff = 10
 vim.o.syntax = "ON"
 vim.o.swapfile = false
 vim.g.mapleader = " "
@@ -32,3 +32,10 @@ require("gitsigns").setup()
 
 require("config.lsp")()
 require("config.completion")()
+
+vim.diagnostic.config({
+	virtual_text = true,
+	signs = true,            -- show signs in the signcolumn
+	underline = true,        -- underline problematic text
+	update_in_insert = false, -- don't update while in insert mode
+})
