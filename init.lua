@@ -14,15 +14,19 @@ vim.o.smartindent = true
 vim.o.mouse = ""
 vim.o.colorcolumn = "80"
 
-vim.keymap.set("n", "<leader>h", ":noh<CR>", { desc = "Clear search highlight" }) -- clear search highlight
-vim.keymap.set("n", "<leader>x", ":so %<CR>", { desc = "Shout out/ source" })     -- shout out/source
-vim.keymap.set("n", "<leader>bl", ":buffers <CR>", { desc = "List buffers" })     -- list buffers
-vim.keymap.set("n", "<leader>bn", ":bn <CR>", { desc = "Next buffer" })           -- next buffer
-vim.keymap.set("n", "<leader>bb", ":bp <CR>", { desc = "Previous buffer" })       -- previous buffer
-vim.keymap.set("n", "<leader>bd", ":bd! <cr>", { desc = "Delete buffer" })        -- delete buffer
-vim.keymap.set("n", "<leader>t", ":tabe ", { desc = "Open file in new tab" })     -- open new file in new tab
-vim.keymap.set("n", "<S-Tab>", "gt", { desc = "Next tab" })                       -- next tab
-vim.keymap.set("n", "<C-S-Tab>", "gT", { desc = "Previous tab" })                 -- previous tab
+vim.keymap.set("n", "<leader>h", ":noh<CR>", { desc = "Clear search highlight" })                     -- clear search highlight
+vim.keymap.set("n", "<leader>x", ":so %<CR>", { desc = "Shout out/ source" })                         -- shout out/source
+vim.keymap.set("n", "<leader>bl", ":buffers <CR>", { desc = "List buffers" })                         -- list buffers
+vim.keymap.set("n", "<leader>bn", ":bn <CR>", { desc = "Next buffer" })                               -- next buffer
+vim.keymap.set("n", "<leader>bb", ":bp <CR>", { desc = "Previous buffer" })                           -- previous buffer
+vim.keymap.set("n", "<leader>bd", ":bd! <cr>", { desc = "Delete buffer" })                            -- delete buffer
+vim.keymap.set("n", "<leader>t", ":tabe ", { desc = "Open file in new tab" })                         -- open new file in new tab
+vim.keymap.set("n", "<S-Tab>", "gt", { desc = "Next tab" })                                           -- next tab
+vim.keymap.set("n", "<C-S-Tab>", "gT", { desc = "Previous tab" })                                     -- previous tab
+vim.keymap.set("n", "<leader>so", ":set spell spelllang=en_us<CR>", { desc = "Turn spell check on" }) -- spell check on
+vim.keymap.set("n", "<leader>sc", ":set nospell<CR>", { desc = "Turn spell check on" })               -- spell check off
+vim.keymap.set("n", "<leader>mp", ":let &mp=''<left>", { desc = "Shortcut to define make" })          -- define make program
+vim.keymap.set("n", "<leader>me", ":make<CR>", { desc = "Run make" })                                 -- run make program
 
 
 vim.cmd("colorscheme retrobox")
