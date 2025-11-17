@@ -27,7 +27,10 @@ vim.keymap.set("n", "<leader>so", ":set spell spelllang=en_us<CR>", { desc = "Tu
 vim.keymap.set("n", "<leader>sc", ":set nospell<CR>", { desc = "Turn spell check on" })               -- spell check off
 vim.keymap.set("n", "<leader>mp", ":let &mp=''<left>", { desc = "Shortcut to define make" })          -- define make program
 vim.keymap.set("n", "<leader>me", ":make<CR>", { desc = "Run make" })                                 -- run make program
-
+vim.keymap.set("n", "<leader>wt", ":set tw=79<CR>", { desc = "Set text witdth to 79 chars" })         -- set text width to 79 chars
+vim.keymap.set("n", "<leader>wn", ":setlocal nowrap<CR>", { desc = "Turn off line wrap" })            -- no line wrap
+vim.keymap.set("n", "<leader>wo", ":setlocal wrap<CR>", { desc = "Turn on line wrap" })               -- line wrap on
+vim.keymap.set("n", "<leader>nw", ":setlocal nowrap<CR>", { desc = "Turn off line wrap" })            -- no line wrap
 
 vim.cmd("colorscheme retrobox")
 
