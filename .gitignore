@@ -12,6 +12,7 @@ nvim-data/
 /pack/*/start/*/spell/
 /pack/*/start/*/rplugin.vim
 /pack/*/start/*/plugin/**/*.vim
+/spell
 
 # LSP and Compiler related
 .luacache/
