@@ -22,7 +22,7 @@ vim.keymap.set("n", "<leader>bb", ":bp <CR>", { desc = "Previous buffer" })     
 vim.keymap.set("n", "<leader>bd", ":bd! <cr>", { desc = "Delete buffer" })                            -- delete buffer
 vim.keymap.set("n", "<leader>t", ":tabe ", { desc = "Open file in new tab" })                         -- open new file in new tab
 vim.keymap.set("n", "<S-Tab>", "gt", { desc = "Next tab" })                                           -- next tab
-vim.keymap.set("n", "<C-S-Tab>", "gT", { desc = "Previous tab" })                                     -- previous tab
+vim.keymap.set("n", "<S-Alt-Tab>", "gT", { desc = "Previous tab" })                                   -- previous tab
 vim.keymap.set("n", "<leader>so", ":set spell spelllang=en_us<CR>", { desc = "Turn spell check on" }) -- spell check on
 vim.keymap.set("n", "<leader>sc", ":set nospell<CR>", { desc = "Turn spell check on" })               -- spell check off
 vim.keymap.set("n", "<leader>mp", ":let &mp=''<left>", { desc = "Shortcut to define make" })          -- define make program
@@ -31,6 +31,7 @@ vim.keymap.set("n", "<leader>wt", ":set tw=79<CR>", { desc = "Set text witdth to
 vim.keymap.set("n", "<leader>wn", ":setlocal nowrap<CR>", { desc = "Turn off line wrap" })            -- no line wrap
 vim.keymap.set("n", "<leader>wo", ":setlocal wrap<CR>", { desc = "Turn on line wrap" })               -- line wrap on
 vim.keymap.set("n", "<leader>nw", ":setlocal nowrap<CR>", { desc = "Turn off line wrap" })            -- no line wrap
+vim.keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>", { desc = "Toggle Nvim-Tree" })                -- toggle nvim-tree
 
 vim.cmd("colorscheme retrobox")
 
@@ -38,6 +39,8 @@ require("mason").setup()
 require("mason-lspconfig").setup()
 
 require("gitsigns").setup()
+require("render-markdown").setup()
+require("nvim-tree").setup()
 
 require("config.lsp")()
 require("config.completion")()
