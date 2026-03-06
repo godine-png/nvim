@@ -40,6 +40,7 @@ require("mason-lspconfig").setup()
 
 require("gitsigns").setup()
 require("render-markdown").setup()
+require("typst-preview").setup()
 require("nvim-tree").setup()
 
 require("config.lsp")()

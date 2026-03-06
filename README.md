@@ -25,10 +25,10 @@ Plugins live within `/pack/nvim/start/`
 │           ├── nvim-lspconfig
 │           ├── nvim-tree.lua
 │           ├── render-markdown.nvim
+│           ├── tinymist
 │           └── typst-preview.nvim
 └── README.md
 ```
-
 ### LSP
 
 - Install [Neovim-lspconfig](https://github.com/neovim/nvim-lspconfig.git)
@@ -52,3 +52,4 @@ Plugins live within `/pack/nvim/start/`
 - [gitsigns](https://github.com/lewis6991/gitsigns.nvim)
 - [nvim-Tree](https://github.com/nvim-tree/nvim-tree.lua)
 - [render-markdown](https://github.com/MeanderingProgrammer/render-markdown.nvim)
+- [typst-preview](https://github.com/chomosuke/typst-preview.nvim)
